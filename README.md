@@ -1,4 +1,3 @@
-<h2 align="center"> Desafio para engenheiro de software</h2>
 <h3 align="center">Desenvolvimento de projeto em java 17 com Spring Boot 3</h3>
 
 ## 📚 Sobre o projeto
