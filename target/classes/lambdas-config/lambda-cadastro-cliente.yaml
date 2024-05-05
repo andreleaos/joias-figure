@@ -1,0 +1,31 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+
+Resources:
+  CadastroClienteLambdaFunction:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: br.com.lts.desafio.cadcli.lambdas.CadastroClienteHandler::handleRequest
+      Runtime: java17
+      CodeUri: cadastrocliente/CadastroClienteLambdaFunction.jar
+      MemorySize: 512
+      Timeout: 30
+
+  ApiGatewayRestApi:
+    Type: 'AWS::Serverless::Api'
+    Properties:
+      StageName: Prod
+      DefinitionBody:
+        swagger: '2.0'
+        info:
+          title: 'Cadastro de Clientes API'
+          version: '1.0.0'
+        paths:
+          /api/cliente/cadastrar:
+            post:
+              responses: {}
+              x-amazon-apigateway-integration:
+                uri:
+                  Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${CadastroClienteLambdaFunction.Arn}/invocations
+                httpMethod: POST
+                type: aws_proxy
