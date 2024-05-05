@@ -57,28 +57,17 @@ public class CriarPedidoCase extends PedidoCase {
 
             var itensPedidoProduto = pedidoService.PesquisarItensPedidoProduto(itensPedidoDto);
 
-            ConsoleLogService.logMessage(String.format("[CriarPedidoCase][executar] - Qtde Itens Pedido: %s", itensPedidoProduto.size()));
-            ConsoleLogService.logMessage(String.format("[CriarPedidoCase][executar] - valor: %s, qtde: %s",
-                    itensPedidoProduto.get(0).getQuantidade(), itensPedidoProduto.get(0).getValor()));
-
             pedidoValidacao.calcularValorTotal(itensPedidoProduto);
             pedidoValidacao.validarDadosParaCadastro();
-
-            ConsoleLogService.logMessage(String.format("[CriarPedidoCase][executar] - Valor calculado: %s",
-                    pedidoValidacao.getValorTotalPedido()));
 
             pedidoDto.setCodigoStatusPedido(StatusPedidoEnum.NOVO.getId());
             pedidoDto.setDataCadastro(LocalDate.now());
             pedidoDto.setDataAtualizacao(LocalDate.now());
             pedidoDto.setValorTotalPedido(pedidoValidacao.getValorTotalPedido());
 
-            ConsoleLogService.logMessage("[CriarPedidoCase][executar] - Dados validados e configurados para a criacao de pedido");
-
             var pedidoCriadoComItens = pedidoService.criarPedido(pedidoDto, itensPedidoDto);
             pedidoCriado = pedidoCriadoComItens.getPedido();
             itensPedido = pedidoCriadoComItens.getItensPedido();
-
-            ConsoleLogService.logMessage("[CriarPedidoCase][executar] - Pedido criado com sucesso");
 
             CriacaoPedidoDto itemCriacaoPedidoDto = new CriacaoPedidoDto(pedidoCriado, itensPedido);
             criacaoPedidoDtos.add(itemCriacaoPedidoDto);
