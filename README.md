@@ -40,7 +40,8 @@ Desenho da solução está disponível no diretório static dentro de resources 
 Foram disponibilizados os arquivos no formato png 
 
 ## Link no Youtube com explicação do projeto
-(incluir link do video)
+https://youtu.be/PdjkyPSgrc0
+
 
 ### :) Agradecimentos
 Muito obrigado pela oportunidade
