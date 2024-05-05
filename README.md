@@ -1,4 +1,4 @@
-<h1 align="center"> Desafio para engenheiro de software</h1>
+<h2 align="center"> Desafio para engenheiro de software</h2>
 <h3 align="center">Desenvolvimento de projeto em java 17 com Spring Boot 3</h3>
 
 ## 📚 Sobre o projeto
@@ -32,7 +32,7 @@ Desenvolvimento de aplicação para gestão de clientes, produtos e pedidos
 A configuração do banco de dados é feita através do arquivo application.properties, em execução na app, por meio do parâmetro spring.jpa.hibernate.ddl-auto. 
 
 
-## ✒️ Colaborador(as/es)
+## ✒️ Colaborador
 
 - **André Leão da Silva** - _Desenvolvedor_ - [andreleaos](https://github.com/andreleaos)
 
