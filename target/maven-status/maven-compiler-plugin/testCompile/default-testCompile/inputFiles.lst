@@ -1,0 +1,12 @@
+C:\RepoJ\joias-figure\src\test\java\br\com\lts\desafio\cadcli\CadastroClientesApplicationTests.java
+C:\RepoJ\joias-figure\src\test\java\br\com\lts\desafio\cadcli\mocks\ClienteResponseDtoMock.java
+C:\RepoJ\joias-figure\src\test\java\br\com\lts\desafio\cadcli\unitTests\ValidacaoRegrasDeNegocioParaAtualizacaoTest.java
+C:\RepoJ\joias-figure\src\test\java\br\com\lts\desafio\cadcli\integrationTests\ValidacaoIntegracaoRepositorioTest.java
+C:\RepoJ\joias-figure\src\test\java\br\com\lts\desafio\cadcli\integrationTests\ValidacaoIntegracaoStrategyTest.java
+C:\RepoJ\joias-figure\src\test\java\br\com\lts\desafio\cadcli\unitTests\ValidacaoRegrasDeNegocioParaPesquisaTest.java
+C:\RepoJ\joias-figure\src\test\java\br\com\lts\desafio\cadcli\unitTests\ValidacaoRegrasDeNegociosParaCadastroTest.java
+C:\RepoJ\joias-figure\src\test\java\br\com\lts\desafio\cadcli\e2e\ClienteControllerTest.java
+C:\RepoJ\joias-figure\src\test\java\br\com\lts\desafio\cadcli\integrationTests\ValidacaoIntegracaoServiceTest.java
+C:\RepoJ\joias-figure\src\test\java\br\com\lts\desafio\cadcli\mocks\ClienteDtoMock.java
+C:\RepoJ\joias-figure\src\test\java\br\com\lts\desafio\cadcli\unitTests\ValidacaoRegrasDeNegocioParaExclusaoTest.java
+C:\RepoJ\joias-figure\src\test\java\br\com\lts\desafio\cadcli\unitTests\ValidacaoConversaoObjetosParaJson.java

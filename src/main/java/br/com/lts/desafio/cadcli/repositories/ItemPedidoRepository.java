@@ -1,0 +1,15 @@
+package br.com.lts.desafio.cadcli.repositories;
+
+import br.com.lts.desafio.cadcli.models.entities.ItemPedidoModel;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface ItemPedidoRepository extends JpaRepository<ItemPedidoModel, Long> {
+
+    List<ItemPedidoModel> findByCodigoProduto(Long id);
+    List<ItemPedidoModel> findByCodigoPedido(Long id);
+
+}
