@@ -11,8 +11,8 @@
 	<groupId>br.com.lts.desafio</groupId>
 	<artifactId>joias-figure</artifactId>
 	<version>0.0.1</version>
-	<name>cadastro-clientes</name>
-	<description>Projeto de cadastro de cliente</description>
+	<name>joias-figure</name>
+	<description>Projeto de gestao de pedidos</description>
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2023.0.1</spring-cloud.version>
